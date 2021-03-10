@@ -142,24 +142,45 @@ div.skills {
     align-items: center;
     width: 50%;
     height: 100%;
+    /* overflow: hidden; */
 }
 
-.pics-container .pic {
+/* .pics-container .pic {
     width: 90%;
     height: 80%;
     overflow: hidden;
     opacity: 99%;
     background-repeat: no-repeat;
     background-size: cover;
+} */
 
-    /* border: white 3px solid; */
-}
+/* PICS INTERESTS */
 
-.pic.traveling {
+/* .pic.traveling {
     background-image: url("img/Traveling.jpg");
     background-position: -100px;
+} */
 
+.pics-container img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    opacity: 99%;
 }
+
+.about-me .pics-container img {
+    display: none;
+}
+
+.about-me .pics-container img:first-child {
+    display: block;
+}
+
+/* PICS PROJECTS */
+/* .pic.tr-pl-website {
+    background-image: url("img/pol-turk-web.png");
+} */
 
 .skillpics {
     display: flex;
@@ -204,6 +225,7 @@ div.skills {
     padding-left: 30px;
     line-height: 45px;
     list-style: none;
+    cursor: default;
 }
 
 .atributes ul.interest li,
