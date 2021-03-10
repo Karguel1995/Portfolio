@@ -29,7 +29,7 @@ main.pic {
 /* HEADER */
 
 .wrapper-header {
-    background-color: red;
+    /* background-color: red; */
     height: 60px;
     width: 100vw;
 }
@@ -49,7 +49,7 @@ div.container-left {
     min-width: 300px;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: mediumpurple;
+    /* background-color: mediumpurple; */
 }
 
 div.hello {
@@ -67,7 +67,7 @@ h1.hello {
 div.container-center {
     display: flex;
     flex-grow: 1;
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
     flex-direction: column;
     /* justify-content: center; */
 }
@@ -75,7 +75,7 @@ div.container-center {
 .container-center .content {
     width: 100%;
     height: 70%;
-    background-color: teal;
+    /* background-color: teal; */
     overflow: hidden;
 }
 
@@ -130,7 +130,7 @@ div.skills {
 }
 
 .pics-container {
-    background-color: tomato;
+    /* background-color: tomato; */
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -166,7 +166,7 @@ div.skills {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
     height: 100%;
 }
@@ -174,7 +174,7 @@ div.skills {
 .skillpics span {
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 30%;
 }
 
@@ -185,7 +185,7 @@ div.skills {
 }
 
 .atributes {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     flex-grow: 1;
     width: 50%;
     height: 100%;
@@ -247,7 +247,7 @@ h2.center-home {
 .container-right {
     display: flex;
     flex-direction: column;
-    background-color: mediumseagreen;
+    /* background-color: mediumseagreen; */
     min-width: 300px;
 }
 
@@ -255,7 +255,7 @@ h2.center-home {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: olive;
+    /* background-color: olive; */
     flex-grow: 1;
 }
 
@@ -278,7 +278,7 @@ h2.center-home {
 .media {
     height: 40px;
     width: 100%;
-    background-color: mediumturquoise;
+    /* background-color: mediumturquoise; */
 }
 
 .media ul {
@@ -564,7 +564,7 @@ h2.center-home {
 
     .media ul li {
         line-height: 6px;
-        background-color: khaki;
+        /* background-color: khaki; */
     }
 
     .media ul li a {
