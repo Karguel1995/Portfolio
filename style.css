@@ -7,6 +7,7 @@ font-family: 'RocknRoll One', sans-serif;
     margin: 0;
     padding: 0;
     color: white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .page-wrapper {
@@ -53,13 +54,11 @@ div.container-left {
 
 div.hello {
     height: 300px;
-    /* width: 100%; */
 }
 
 h1.hello {
     font-size: 64px;
     font-family: Helvetica, Arial, sans-serif;
-    /* color: white; */
     opacity: 10%;
 }
 
@@ -77,6 +76,7 @@ div.container-center {
     width: 100%;
     height: 70%;
     background-color: teal;
+    overflow: hidden;
 }
 
 .content h1,
@@ -95,14 +95,9 @@ h2 {
     opacity: 99%;
 }
 
-.second-header h1 {
-    display: none;
-}
-
 .home {
     display: flex;
     flex-direction: column;
-    /* display: none; */
 }
 
 .about-me {
@@ -130,7 +125,7 @@ div.skills {
     display: flex;
     width: 100%;
     height: 100%;
-    opacity: 99%;
+    /* opacity: 99%; */
     display: none;
 }
 
@@ -142,30 +137,19 @@ div.skills {
     align-items: center;
     width: 50%;
     height: 100%;
-    /* overflow: hidden; */
+    flex-direction: column;
 }
 
-/* .pics-container .pic {
-    width: 90%;
-    height: 80%;
-    overflow: hidden;
-    opacity: 99%;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.pics-container h2 {
+    padding-top: 30px;
+}
 
-/* PICS INTERESTS */
-
-/* .pic.traveling {
-    background-image: url("img/Traveling.jpg");
-    background-position: -100px;
-} */
 
 .pics-container img {
+    height: auto;
+    max-height: 450px;
     width: auto;
     max-width: 100%;
-    height: auto;
-    max-height: 400px;
     opacity: 99%;
 }
 
@@ -176,11 +160,6 @@ div.skills {
 .about-me .pics-container img:first-child {
     display: block;
 }
-
-/* PICS PROJECTS */
-/* .pic.tr-pl-website {
-    background-image: url("img/pol-turk-web.png");
-} */
 
 .skillpics {
     display: flex;
@@ -210,6 +189,9 @@ div.skills {
     flex-grow: 1;
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .atributes ul {
@@ -236,6 +218,20 @@ ul.projects li {
 .atributes ul.interests li:hover,
 ul.projects li:hover {
     color: yellow;
+}
+
+.atributes p {
+    opacity: 99%;
+    padding-left: 100px;
+}
+
+.atributes p.mainAtr {
+    opacity: 50%;
+    padding-bottom: 20px;
+}
+
+.atributes p.property {
+    padding-bottom: 30px;
 }
 
 h1.center-home {
@@ -288,8 +284,291 @@ h2.center-home {
 .media ul {
     display: flex;
     justify-content: space-around;
+    list-style: none;
 }
 
 .media ul li a {
     font-size: 12px;
+    opacity: 99%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* ******* MEDIA QUERIES ******** */
+
+/* Large devices (large laptops and desktops, 1240px and down) */
+@media only screen and (max-width: 1240px) {
+    div.container-left {
+        min-width: 250px;
+    }
+
+    div.container-right {
+        min-width: 250px;
+    }
+
+    h1.hello {
+        font-size: 52px;
+    }
+
+    h1.center-home {
+        font-size: 64px;
+    }
+
+    h2.center-home {
+        font-size: 18px;
+    }
+
+    .second-header h1 {
+        font-size: 26px;
+    }
+
+    .pics-container {
+        width: 60%;
+    }
+
+    .atributes {
+        width: 40%;
+    }
+
+    .atributes ul li {
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+    .atributes p {
+        padding-left: 50px;
+    }
+
+    .atributes p.mainAtr {
+        padding-bottom: 10px;
+    }
+
+    .atributes p.property {
+        padding-bottom: 30px;
+    }
+
+    .skillpics img {
+        height: 80px;
+        width: auto;
+        opacity: 99%;
+    }
+
+    .Contact .atributes {
+        width: 50%;
+    }
+
+    .Contact .pics-container {
+        width: 50%;
+    }
+
+    .pics-container h2 {
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px) {
+    div.container-left {
+        min-width: 50px;
+    }
+
+    div.container-right {
+        min-width: 150px;
+    }
+
+    h1.hello {
+        font-size: 0px;
+    }
+
+    h1.center-home {
+        font-size: 54px;
+    }
+
+    h2.center-home {
+        font-size: 16px;
+    }
+
+    .second-header h1 {
+        font-size: 22px;
+    }
+
+    .pics-container {
+        width: 60%;
+    }
+
+    .atributes {
+        width: 40%;
+    }
+
+    .atributes ul li {
+        font-size: 16px;
+        padding-left: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    .skillpics img {
+        height: 80px;
+        width: auto;
+        opacity: 99%;
+    }
+
+    .Contact .atributes {
+        width: 50%;
+    }
+
+    .Contact .pics-container {
+        width: 50%;
+    }
+
+    .pics-container h2 {
+        font-size: 16px;
+    }
+
+    .atributes p {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .atributes p.mainAtr {
+        padding-bottom: 10px;
+    }
+
+    .atributes p.property {
+        padding-bottom: 30px;
+    }
+
+    .media {
+        height: 100px;
+        width: 100%;
+    }
+
+    .media ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .media ul li a {
+        font-size: 12px;
+        opacity: 99%;
+        text-decoration: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+
+    div.container-left {
+        min-width: 0px;
+    }
+
+    div.container-right {
+        min-width: 100px;
+    }
+
+    .container-center {
+        padding-left: 50px;
+    }
+
+    h1.hello {
+        font-size: 0px;
+    }
+
+    h1.center-home {
+        font-size: 36px;
+    }
+
+    h2.center-home {
+        font-size: 14px;
+    }
+
+    .second-header h1 {
+        font-size: 18px;
+    }
+
+    .pics-container {
+        width: 50%;
+    }
+
+    .pics-container img {
+        max-height: 160px;
+    }
+
+    .atributes {
+        width: 50%;
+    }
+
+    .atributes ul li {
+        font-size: 12px;
+        padding-left: 20px;
+        line-height: 14px;
+        padding-bottom: 10px;
+    }
+
+    .skillpics img {
+        height: 40px;
+    }
+
+    .Contact .atributes {
+        width: 50%;
+    }
+
+    .Contact .pics-container {
+        width: 50%;
+    }
+
+    .pics-container h2 {
+        font-size: 12px;
+    }
+
+    .atributes p {
+        padding-left: 25px;
+        font-size: 10px;
+    }
+
+    .atributes p.mainAtr {
+        padding-bottom: 6px;
+    }
+
+    .atributes p.property {
+        padding-bottom: 20px;
+    }
+
+    .navigation ul li {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .media {
+        height: 50px;
+    }
+
+    .media ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .media ul li {
+        line-height: 10px;
+        background-color: khaki;
+    }
+
+    .media ul li a {
+        font-size: 8px;
+    }
+
 }
