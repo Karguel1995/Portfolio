@@ -8,7 +8,7 @@ const h1SecondHeader = document.querySelector(".second-header h1")
 
 mainContainers = [homeContainer, aboutMeContainer, skillsContainer, myProjectsContainer, contactContainer]
 
-const menuButtons = [...document.querySelectorAll('div.navigation nav ul li')]
+const menuButtons = [...document.querySelectorAll('div.navigation ul li')]
 
 // Footer
 
@@ -20,8 +20,6 @@ mainContainers.forEach(function(circle, index) {
     console.log(navCircle)
     footer.appendChild(navCircle)
 });
-
-const navCircles = [...document.querySelectorAll('div.navCircle')]
 
 //
 

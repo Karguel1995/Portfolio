@@ -209,13 +209,17 @@ div.skills {
     cursor: default;
 }
 
+.atributes ul li a {
+    text-decoration: none;
+}
+
 .atributes ul.interest li,
 ul.projects li {
     cursor: pointer;
 }
 
 .atributes ul.interests li:hover,
-ul.projects li:hover {
+.atributes ul.projects li a:hover {
     color: yellow;
 }
 
@@ -608,6 +612,7 @@ footer {
     }
 
     .navigation i {
+        font-size: 24px;
         display: inline-block;
         opacity: 99%;
     }
