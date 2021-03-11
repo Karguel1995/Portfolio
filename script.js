@@ -10,6 +10,12 @@ mainContainers = [homeContainer, aboutMeContainer, skillsContainer, myProjectsCo
 
 const menuButtons = [...document.querySelectorAll('div.navigation ul li')]
 
+const burgerBarOpen = document.querySelector('.navigation .hamburger i.fa-bars')
+
+const burgerBarClose = document.querySelector('.navigation .hamburger i.fa-times ')
+
+const spreadedNavigation = document.querySelector('.navigation ul')
+
 // Footer
 
 const footer = document.querySelector("div.footer")
@@ -20,6 +26,26 @@ mainContainers.forEach(function(circle, index) {
     console.log(navCircle)
     footer.appendChild(navCircle)
 });
+
+//
+
+// Navigation for Mobiles 
+
+const handleBurgerClick = () => {
+    burgerBarOpen.classList.toggle('active')
+    burgerBarClose.classList.toggle('active')
+    spreadedNavigation.classList.toggle('showBar');
+    // if(spreadedNavigation.style.display == 'flex'){
+    //     console.log('znika!')
+    //     spreadedNavigation.style.display = 'none'
+    // } else {
+    //     console.log('Pojawia się!')
+    //     spreadedNavigation.style.display = 'flex'
+    // }
+}
+
+burgerBarOpen.addEventListener('click', handleBurgerClick)
+burgerBarClose.addEventListener('click', handleBurgerClick)
 
 //
 
@@ -44,6 +70,10 @@ menuButtons.forEach(function(button, index){
         })
 
         mainContainers[index].style.display='flex'
+        console.log('działa')
+        if (spreadedNavigation.classList == 'showBar'){
+        handleBurgerClick()
+        }
     })
 })
 

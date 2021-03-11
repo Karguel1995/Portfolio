@@ -10,6 +10,10 @@ font-family: 'RocknRoll One', sans-serif;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+body {
+    background-color: royalblue;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -250,30 +254,39 @@ h2.center-home {
 .container-right {
     display: flex;
     flex-direction: column;
-    background-color: mediumseagreen;
+    /* background-color: mediumseagreen; */
     min-width: 300px;
 }
 
-.container-right .navigation {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: olive;
+    /* background-color: olive; */
     flex-grow: 1;
 }
 
-.container-right .navigation ul li {
+/* .navigation ul {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    position: static;
+    top: auto;
+    left: auto;
+    display: block;
+} */
+
+.navigation ul li {
     list-style: none;
     font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
     text-decoration: none;
-    /* color: white; */
     cursor: pointer;
     opacity: 60%;
     line-height: 48px;
 }
 
-.container-right .navigation ul li:hover {
+.navigation ul li:hover {
     opacity: 99%;
     color: yellow;
 }
@@ -490,8 +503,8 @@ footer {
         min-width: 100px;
     }
 
-    .home {
-        padding-left: 50px;
+    .content {
+        padding-left: 30px;
     }
 
     h1.hello {
@@ -597,13 +610,13 @@ footer {
     }
 
     div.container-right {
+        position: relative;
         width: 100%;
         height: 60px;
-        flex-direction: row;
     }
 
     .navigation .hamburger {
-        background-color: violet;
+        /* background-color: violet; */
         width: 80%;
         height: 100%;
         display: flex;
@@ -611,14 +624,35 @@ footer {
         justify-content: flex-end;
     }
 
-    .navigation i {
+    .navigation i.active {
         font-size: 24px;
         display: inline-block;
         opacity: 99%;
+        z-index: 2;
     }
 
     .navigation ul {
         display: none;
+    }
+
+    .navigation ul.showBar {
+        width: 100%;
+        background-color: #333;
+        height: 50vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-right .navigation ul li {
+        list-style: none;
+        font-size: 24px;
+        opacity: 80%;
+        line-height: 48px;
     }
 
     div.media {
@@ -633,21 +667,15 @@ footer {
         display: none;
     }
 
-    /* .container-right {
-        display: flex;
-        flex-direction: column;
-        min-width: 300px;
+    .container-center {
+        width: 100%;
     }
-    
-    .container-right .navigation ul li {
-        list-style: none;
-        font-size: 18px;
-        font-family: Helvetica, Arial, sans-serif;
-        text-decoration: none;
-        cursor: pointer;
-        opacity: 60%;
-        line-height: 48px;
-    } */
+
+    .container-center .content {
+        width: 100%;
+        height: 70%;
+        padding-left: 0px;
+    }
 
     h1.hello {
         font-size: 0px;
@@ -658,90 +686,36 @@ footer {
         padding-right: 20px;
     }
 
-    h1.center-home {
-        font-size: 36px;
+    .about-me {
+        flex-direction: column;
     }
 
-    h2.center-home {
-        font-size: 14px;
+    div.skills {
+        flex-direction: column;
     }
 
-    .second-header h1 {
-        font-size: 18px;
+    .my-projects {
+        flex-direction: column;
+    }
+
+    .Contact {
+        flex-direction: column;
     }
 
     .pics-container {
-        width: 50%;
-    }
-
-    .pics-container img {
-        max-height: 160px;
-    }
-
-    .atributes {
-        width: 50%;
-    }
-
-    .atributes ul li {
-        font-size: 12px;
-        padding-left: 20px;
-        line-height: 14px;
-        padding-bottom: 10px;
-    }
-
-    .skillpics img {
-        height: 40px;
-    }
-
-    .Contact .atributes {
-        width: 50%;
+        width: 100%;
     }
 
     .Contact .pics-container {
-        width: 50%;
+        width: 90%;
+        padding-left: 20px;
     }
 
-    .pics-container h2 {
-        font-size: 12px;
+    .atributes,
+    .Contact .atributes {
+        width: 100%;
     }
 
-    .atributes p {
-        padding-left: 25px;
-        font-size: 10px;
-    }
-
-    .atributes p.mainAtr {
-        padding-bottom: 6px;
-    }
-
-    .atributes p.property {
-        padding-bottom: 20px;
-    }
-
-    .navigation ul li {
-        font-size: 14px;
-        line-height: 32px;
-    }
-
-    .media {
-        height: 60px;
-    }
-
-    .media ul {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-    }
-
-    .media ul li {
-        line-height: 6px;
-        /* background-color: khaki; */
-    }
-
-    .media ul li a {
-        font-size: 8px;
-    }
 
     footer {
         display: flex;
