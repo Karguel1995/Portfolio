@@ -10,11 +10,25 @@ mainContainers = [homeContainer, aboutMeContainer, skillsContainer, myProjectsCo
 
 const menuButtons = [...document.querySelectorAll('div.navigation nav ul li')]
 
+// Footer
+
+const footer = document.querySelector("div.footer")
+
+mainContainers.forEach(function(circle, index) {
+    const navCircle = document.createElement('div')
+    navCircle.classList.add('navCircle')
+    console.log(navCircle)
+    footer.appendChild(navCircle)
+});
+
+const navCircles = [...document.querySelectorAll('div.navCircle')]
+
+//
 
 
 menuButtons.forEach(function(button, index){
     button.addEventListener('click', function() {
-
+        
         if (index == 0){
             h1SecondHeader.textContent = ""
         }else if(index == 1) {
@@ -24,7 +38,7 @@ menuButtons.forEach(function(button, index){
         }else if(index == 3) {
             h1SecondHeader.textContent = "Projects in which I used my knowledge"
         }else if(index == 4) {
-            h1SecondHeader.textContent = "Let's contact me!"
+            h1SecondHeader.textContent = "Let's get in touch!"
         }
 
         mainContainers.forEach(function(container) {
@@ -54,3 +68,9 @@ interestsList.forEach(function(verse, index){
 })
 
 console.log(interestsList)
+
+navCircles.forEach(function(circle, index){
+    circle.addEventListener('click', function() {
+
+    })
+})
