@@ -11,7 +11,7 @@ font-family: 'RocknRoll One', sans-serif;
 }
 
 body {
-    background-color: royalblue;
+    /* background-color: royalblue; */
 }
 
 .page-wrapper {
@@ -52,7 +52,7 @@ div.container-left {
     min-width: 300px;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: mediumpurple;
+    /* background-color: mediumpurple; */
 }
 
 div.hello {
@@ -70,7 +70,7 @@ h1.hello {
 div.container-center {
     display: flex;
     flex-grow: 1;
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
     flex-direction: column;
     /* justify-content: center; */
 }
@@ -78,7 +78,7 @@ div.container-center {
 .container-center .content {
     width: 100%;
     height: 70%;
-    background-color: teal;
+    /* background-color: teal; */
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ div.skills {
 }
 
 .pics-container {
-    background-color: tomato;
+    /* background-color: tomato; */
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -169,7 +169,7 @@ div.skills {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
     height: 100%;
 }
@@ -177,7 +177,7 @@ div.skills {
 .skillpics span {
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 30%;
 }
 
@@ -188,7 +188,7 @@ div.skills {
 }
 
 .atributes {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     flex-grow: 1;
     width: 50%;
     height: 100%;
@@ -266,16 +266,6 @@ h2.center-home {
     flex-grow: 1;
 }
 
-/* .navigation ul {
-    width: 100%;
-    background-color: transparent;
-    height: 100%;
-    position: static;
-    top: auto;
-    left: auto;
-    display: block;
-} */
-
 .navigation ul li {
     list-style: none;
     font-size: 18px;
@@ -294,7 +284,7 @@ h2.center-home {
 .media {
     height: 40px;
     width: 100%;
-    background-color: mediumturquoise;
+    /* background-color: mediumturquoise; */
 }
 
 .media ul {
@@ -318,7 +308,7 @@ footer {
     display: flex;
     width: 100%;
     height: 10px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 
@@ -507,10 +497,6 @@ footer {
         padding-left: 30px;
     }
 
-    h1.hello {
-        font-size: 0px;
-    }
-
     h1.center-home {
         font-size: 36px;
     }
@@ -537,21 +523,11 @@ footer {
 
     .atributes ul li {
         font-size: 12px;
-        padding-left: 20px;
         line-height: 14px;
-        padding-bottom: 10px;
     }
 
     .skillpics img {
         height: 40px;
-    }
-
-    .Contact .atributes {
-        width: 50%;
-    }
-
-    .Contact .pics-container {
-        width: 50%;
     }
 
     .pics-container h2 {
@@ -580,16 +556,8 @@ footer {
         height: 60px;
     }
 
-    .media ul {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-    }
-
     .media ul li {
         line-height: 6px;
-        /* background-color: khaki; */
     }
 
     .media ul li a {
@@ -603,9 +571,6 @@ footer {
 @media only screen and (max-width: 600px) {
 
     div.page-body {
-        display: flex;
-        flex-grow: 1;
-        width: 100vw;
         flex-direction: column-reverse;
     }
 
@@ -673,7 +638,7 @@ footer {
 
     .container-center .content {
         width: 100%;
-        height: 70%;
+        height: 100%;
         padding-left: 0px;
     }
 
@@ -694,6 +659,19 @@ footer {
         flex-direction: column;
     }
 
+    .atributes ul {
+        padding-left: 5px;
+    }
+
+    .atributes ul li {
+        font-size: 18px;
+        line-height: 14px;
+    }
+
+    .skillpics img {
+        height: 50px;
+    }
+
     .my-projects {
         flex-direction: column;
     }
@@ -704,16 +682,32 @@ footer {
 
     .pics-container {
         width: 100%;
+        height: 50%;
+    }
+
+    .pics-container h2 {
+        font-size: 16px;
+    }
+
+    .pics-container img {
+        max-height: 180px;
     }
 
     .Contact .pics-container {
+        height: 70%;
         width: 90%;
         padding-left: 20px;
+    }
+
+    .atributes p {
+        font-size: 16px;
     }
 
     .atributes,
     .Contact .atributes {
         width: 100%;
+        height: 50%;
+        flex-wrap: nowrap;
     }
 
 
