@@ -20,12 +20,12 @@ const spreadedNavigation = document.querySelector('.navigation ul')
 
 const footer = document.querySelector("div.footer")
 
-mainContainers.forEach(function(circle, index) {
-    const navCircle = document.createElement('div')
-    navCircle.classList.add('navCircle')
-    console.log(navCircle)
-    footer.appendChild(navCircle)
-});
+// mainContainers.forEach(function(circle, index) {
+//     const navCircle = document.createElement('div')
+//     navCircle.classList.add('navCircle')
+//     console.log(navCircle)
+//     footer.appendChild(navCircle)
+// });
 
 //
 
@@ -35,13 +35,6 @@ const handleBurgerClick = () => {
     burgerBarOpen.classList.toggle('active')
     burgerBarClose.classList.toggle('active')
     spreadedNavigation.classList.toggle('showBar');
-    // if(spreadedNavigation.style.display == 'flex'){
-    //     console.log('znika!')
-    //     spreadedNavigation.style.display = 'none'
-    // } else {
-    //     console.log('Pojawia się!')
-    //     spreadedNavigation.style.display = 'flex'
-    // }
 }
 
 burgerBarOpen.addEventListener('click', handleBurgerClick)
@@ -70,12 +63,14 @@ menuButtons.forEach(function(button, index){
         })
 
         mainContainers[index].style.display='flex'
-        console.log('działa')
         if (spreadedNavigation.classList == 'showBar'){
         handleBurgerClick()
         }
     })
 })
+
+
+
 
 
 const interestsList = [...document.querySelectorAll("ul.interests li")];

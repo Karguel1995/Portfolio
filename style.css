@@ -732,7 +732,7 @@ footer {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        opacity: 70%;
+        opacity: 50%;
     }
 
     footer .navCircle .active {
