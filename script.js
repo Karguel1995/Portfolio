@@ -46,15 +46,15 @@ burgerBarClose.addEventListener('click', handleBurgerClick)
 menuButtons.forEach(function(button, index){
     button.addEventListener('click', function() {
         
-        if (index == 0){
+        if (index === 0){
             h1SecondHeader.textContent = ""
-        }else if(index == 1) {
+        }else if(index === 1) {
             h1SecondHeader.textContent = "How I spend my free time"
-        }else if(index == 2) {
+        }else if(index === 2) {
             h1SecondHeader.textContent = "Main technologies, and languages I use"
-        }else if(index == 3) {
+        }else if(index === 3) {
             h1SecondHeader.textContent = "Projects in which I used my knowledge"
-        }else if(index == 4) {
+        }else if(index === 4) {
             h1SecondHeader.textContent = "Let's get in touch!"
         }
 
@@ -77,23 +77,23 @@ const interestsList = [...document.querySelectorAll("ul.interests li")];
 const photosInterestsList = [...document.querySelectorAll(".about-me .pics-container img")];
 
 interestsList.forEach(function(verse, index){
-
     verse.addEventListener('mouseover', function(){
-
-        photosInterestsList.forEach(function(photo, index){
+        photosInterestsList.forEach(function(photo){
             photo.style.display = 'none'
         })
-
         photosInterestsList[index].style.display = 'block'
-
     })
-
 })
 
-console.log(interestsList)
 
-navCircles.forEach(function(circle, index){
-    circle.addEventListener('click', function() {
+const projectsList = [...document.querySelectorAll("ul.projects li")];
+const photosProjectsList = [...document.querySelectorAll(".my-projects .pics-container .pic")];
 
+projectsList.forEach(function(project, index){
+    project.addEventListener('mouseover', function(){
+        photosProjectsList.forEach(function(photo){
+            photo.style.display = 'none'
+        })
+        photosProjectsList[index].style.display = 'block'
     })
 })

@@ -10,10 +10,6 @@ font-family: 'RocknRoll One', sans-serif;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-body {
-    /* background-color: royalblue; */
-}
-
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -164,6 +160,47 @@ div.skills {
     display: block;
 }
 
+.my-projects .pics-container .pic {
+    display: none;
+    position: relative;
+}
+
+.my-projects .pics-container .pic img {
+    filter: brightness(70%);
+}
+
+.my-projects .pics-container .pic:first-child {
+    display: block;
+}
+
+.my-projects .pics-container .pic .links {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-projects .pics-container .pic .links i {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #111;
+    opacity: 70%;
+    transition: .3s;
+}
+
+.my-projects .pics-container .pic .links i:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
 .skillpics {
     display: flex;
     flex-wrap: wrap;
@@ -217,13 +254,8 @@ div.skills {
     text-decoration: none;
 }
 
-.atributes ul.interest li,
-ul.projects li {
-    cursor: pointer;
-}
-
 .atributes ul.interests li:hover,
-.atributes ul.projects li a:hover {
+.atributes ul.projects li:hover {
     color: yellow;
 }
 
@@ -297,6 +329,10 @@ h2.center-home {
     font-size: 12px;
     opacity: 99%;
     text-decoration: none;
+}
+
+.media ul li a:hover {
+    color: yellow;
 }
 
 .navigation i {
